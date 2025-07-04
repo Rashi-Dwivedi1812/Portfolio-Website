@@ -32,8 +32,8 @@ import dockerLogo from './assets/tech_logo/docker.png';
 
 
 // Experience Section Logo's
-// import webverseLogo from './assets/company_logo/webverse_logo.png';
-// import agcLogo from './assets/company_logo/agc_logo.png';
+import gdgLogo from './assets/company_logo/gdg.png';
+import aimlLogo from './assets/company_logo/aiml.png';
 // import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
 // // Education Section Logo's
@@ -107,61 +107,39 @@ export const SkillsInfo = [
   },
 ];
 
-//   export const experiences = [
-//     {
-//       id: 0,
-//       img: webverseLogo,
-//       role: "Fullstack Developer",
-//       company: "Webverse Digital",
-//       date: "April 2024 - Present",
-//       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-//       skills: [
-//         "HTML",
-//         "CSS",
-//         "JavaScript",
-//         "React JS",
-//         "TypeScript",
-//         "Node JS",
-//         "Tailwind CSS",
-//         "MongoDb",
-//         "Redux",
-//         " Next Js",
-//       ],
-//     },
-//     {
-//       id: 1,
-//       img: agcLogo,
-//       role: "Fullstack Engineer",
-//       company: "Agumentik Group of Companies",
-//       date: "July 2023 - March 2024",
-//       desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-//       skills: [
-//         "ReactJS",
-//         "Redux",
-//         "JavaScript",
-//         "Tailwind CSS",
-//         "HTML",
-//         "CSS",
-//         "SQL",
-//       ],
-//     },
-//     {
-//       id: 2,
-//       img: newtonschoolLogo,
-//       role: "Frontend Intern",
-//       company: "Newton School",
-//       date: "September 2021 - August 2022",
-//       desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-//       skills: [
-//         "HTML",
-//         "CSS",
-//         "Javascript",
-//         "Bootstrap",
-//         "Figma",
-//         "Material UI",
-//       ],
-//     },
-//   ];
+  export const experiences = [
+    {
+      id: 0,
+      img: aimlLogo,
+      role: "JIIT 128 Campus Lead",
+      company: "AI/ML Hub of JIIT",
+      date: "June 2025 - Present",
+      desc: "Led the AI/ML student community by organizing workshops, tech talks, and hands-on sessions focused on machine learning and data science. Fostered collaboration among peers, mentored juniors, and promoted a culture of innovation and learning in the field of artificial intelligence.",
+      skills: [
+        "Team Leadership",
+        "Event Coordination",
+        "Public Speaking",
+        "Communication Skills",
+        "Time Management",
+        "Problem Solving",
+      ],
+    },
+    {
+      id: 1,
+      img: gdgLogo,
+      role: "Core Team Member",
+      company: "Google Developer Groups (GDG JIIT 128)",
+      date: "September 2024 - September 2025",
+      desc: "As a core team member of GDG JIIT 128, I actively contributed to both social media strategy and event management. I handled content creation, campaign planning, and audience engagement across platforms like Instagram and LinkedIn. I also collaborated with team leads to organize tech events, coordinate volunteers, and ensure smooth execution of community-driven initiatives.",
+      skills: [
+        "Social Media Management",
+        "Event Planning",
+        "Leadership","Responsibility",
+        "Team Communication",
+        "Problem Solving"
+      ],
+    },
+  ];
   
   // export const education = [
   //   {
