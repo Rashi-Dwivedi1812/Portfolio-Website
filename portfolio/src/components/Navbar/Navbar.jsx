@@ -38,13 +38,19 @@ export const Navbar = () => {
   ];
   return (
        <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-        isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
-    >
-      <div className="text-white py-5 flex justify-between items-center">
+  className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-6xl z-50 transition duration-300 px-6 md:px-10 rounded-2xl border border-[#2d2d3a] shadow-lg
+    ${
+      isScrolled
+        ? "bg-[radial-gradient(circle_at_top_left,_#0a0a23,_#050414)]"
+        : "bg-[radial-gradient(circle_at_top_left,_#0a0a23,_#050414)]"
+    }
+  `}
+  style={{ boxShadow: "0 4px 24px 0 rgba(130, 69, 236, 0.08)" }}
+>
+
+      <div className="text-white py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <div className="text-lg font-semibold cursor-pointer flex items-center space-x-1">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Rashi</span>
           <span className="text-[#8245ec]">/</span>
@@ -54,11 +60,11 @@ export const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-300">
-          {menuItems.map((item) => (
+           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
-                activeSection === item.id ? "text-[#8245ec]" : ""
+              className={`cursor-pointer hover:text-[#8245ec] transition-colors duration-200 ${
+                activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
               }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
@@ -74,7 +80,7 @@ export const Navbar = () => {
             href="https://github.com/Rashi-DWivedi1812"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
           >
             <FaGithub size={24} />
           </a>
@@ -82,7 +88,7 @@ export const Navbar = () => {
             href="https://www.linkedin.com/in/rashi-dwivedi-796032339/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
           >
             <FaLinkedin size={24} />
           </a>
@@ -105,14 +111,14 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu Items */}
-      {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+       {isOpen && (
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#18162a]/95 backdrop-blur-lg z-50 rounded-xl shadow-lg md:hidden border border-[#2d2d3a]">
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
             {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer hover:text-white ${
-                  activeSection === item.id ? "text-[#8245ec]" : ""
+                className={`cursor-pointer hover:text-white transition-colors duration-200 ${
+                  activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
                 }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>
@@ -125,15 +131,15 @@ export const Navbar = () => {
                 href="https://github.com/codingmastr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-white transition-colors duration-200"
               >
-                <FaGithub size={24} />
+                 <FaGithub size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-white transition-colors duration-200"
               >
                 <FaLinkedin size={24} />
               </a>
