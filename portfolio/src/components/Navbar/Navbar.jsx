@@ -38,15 +38,14 @@ export const Navbar = () => {
   ];
   return (
        <nav
-  className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-6xl z-50 transition duration-300 px-6 md:px-10 rounded-2xl border border-[#2d2d3a] shadow-lg
-    ${
-      isScrolled
-        ? "bg-[radial-gradient(circle_at_top_left,_#0a0a23,_#050414)]"
-        : "bg-[radial-gradient(circle_at_top_left,_#0a0a23,_#050414)]"
-    }
-  `}
-  style={{ boxShadow: "0 4px 24px 0 rgba(130, 69, 236, 0.08)" }}
->
+  className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90vw] max-w-6xl z-50 transition duration-300 px-6 md:px-10 rounded-2xl border border-[#2d2d3a]/30 ${
+        isScrolled
+          ? "bg-transparent backdrop-blur-md shadow-lg"
+          : "bg-transparent"
+      }`}
+      style={{ boxShadow: isScrolled ? "0 4px 24px 0 rgba(130, 69, 236, 0.08)" : "none" }}
+    >
+
 
       <div className="text-white py-4 flex justify-between items-center">
         {/* Logo */}
