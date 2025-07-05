@@ -50,11 +50,11 @@ export const Navbar = () => {
       <div className="text-white py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-lg font-semibold cursor-pointer flex items-center space-x-1">
-          <span className="text-[#8245ec]">&lt;</span>
+          <span className="text-pink-500">&lt;</span>
           <span className="text-white">Rashi</span>
-          <span className="text-[#8245ec]">/</span>
+          <span className="text-pink-500">/</span>
           <span className="text-white">Dwivedi</span>
-          <span className="text-[#8245ec]">&gt;</span>
+          <span className="text-pink-500">&gt;</span>
         </div>
 
         {/* Desktop Menu */}
@@ -62,8 +62,8 @@ export const Navbar = () => {
            {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] transition-colors duration-200 ${
-                activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
+              className={`cursor-pointer hover:text-pink-500 transition-colors duration-200 ${
+                activeSection === item.id ? "text-pink-500 font-semibold" : ""
               }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
@@ -77,7 +77,7 @@ export const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <a
              href="#contact"
-            className="text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
+            className="text-gray-300 hover:text-pink-500 transition-colors duration-200"
           >
             <IoMdContact size={27} />
           </a>
@@ -85,7 +85,7 @@ export const Navbar = () => {
             href="https://github.com/Rashi-DWivedi1812"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
+            className="text-gray-300 hover:text-pink-500 transition-colors duration-200"
           >
             <FaGithub size={24} />
           </a>
@@ -93,7 +93,7 @@ export const Navbar = () => {
             href="https://www.linkedin.com/in/rashi-dwivedi-796032339/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
+            className="text-gray-300 hover:text-pink-500 transition-colors duration-200"
           >
             <FaLinkedin size={24} />
           </a>
@@ -103,12 +103,12 @@ export const Navbar = () => {
         <div className="md:hidden">
           {isOpen ? (
             <FiX
-              className="text-3xl text-[#8245ec] cursor-pointer"
+              className="text-3xl text-pink-500 cursor-pointer"
               onClick={() => setIsOpen(false)}
             />
           ) : (
             <FiMenu
-              className="text-3xl text-[#8245ec] cursor-pointer"
+              className="text-3xl text-pink-500 cursor-pointer"
               onClick={() => setIsOpen(true)}
             />
           )}
@@ -123,7 +123,7 @@ export const Navbar = () => {
               <li
                 key={item.id}
                 className={`cursor-pointer hover:text-white transition-colors duration-200 ${
-                  activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
+                  activeSection === item.id ? "text-pink-500 font-semibold" : ""
                 }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>

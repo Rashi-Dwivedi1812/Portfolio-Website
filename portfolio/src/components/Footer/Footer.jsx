@@ -14,7 +14,7 @@ export const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Rashi Dwivedi</h2>
+        <h2 className="text-2xl font-semibold bg-gradient-to-r from-pink-500 via-red-500 to yellow-500 bg-clip-text text-transparent">Rashi Dwivedi</h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">

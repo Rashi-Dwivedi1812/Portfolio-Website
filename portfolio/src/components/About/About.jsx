@@ -20,34 +20,35 @@ export const About = () => {
             Rashi Dwivedi
           </h2>
 
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
-            <ReactTypingEffect
-              text={[
-                'Full-Stack Developer',
-                'MERN Stack Developer',
-                'Frontend Developer',
-                'Backend Developer',
-                'UI/UX Designer',
-                'Coder',
-              ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
-            />
-          </h3>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
+  I am a{' '}
+  <span className="inline-block bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600 bg-clip-text text-transparent">
+    <ReactTypingEffect
+      text={[
+        'Full-Stack Developer',
+        'MERN Stack Developer',
+        'Frontend Developer',
+        'Backend Developer',
+        'UI/UX Designer',
+        'Coder',
+      ]}
+      speed={100}
+      eraseSpeed={50}
+      typingDelay={500}
+      eraseDelay={2000}
+      cursorRenderer={(cursor) => (
+        <span className="text-pink-500">{cursor}</span>
+      )}
+    />
+  </span>
+</h3>
+
 
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
             I’m a passionate and dedicated Full Stack Developer with a strong foundation in building responsive,
             user-focused web applications using the MERN stack. I have developed, deployed, and optimized scalable
-            applications that solve real-world problems. Alongside development, I have a keen eye for UI/UX design 
-            and enjoy creating intuitive, clean interfaces that enhance the user experience. I thrive in 
-            collaborative environments, love tackling new challenges, and continuously seek to grow both as a 
-            developer and as a problem-solver.
+            applications that solve real-world problems. I thrive in collaborative environments, love tackling new 
+            challenges, and continuously seek to grow both as a developer and as a problem-solver.
           </p>
 
           <a
@@ -56,8 +57,10 @@ export const About = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
   style={{
-    background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-    boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+   background: 'linear-gradient(90deg, #ec4899, #ef4444)',
+boxShadow: '0 0 2px #ec489988, 0 0 4px #ef444466, 0 0 15px #ef444433',
+
+
   }}
           >
             Resume <FiDownload className="text-xl" />
@@ -67,7 +70,7 @@ export const About = () => {
         {/* Right Side */}
        <div className="md:w-1/2 flex justify-center md:justify-end">
   <Tilt
-    className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-5 border-[#8245ec] rounded-full grid place-items-center bg-black"
+    className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-3 border-pink-400 rounded-full grid place-items-center bg-black"
     tiltMaxAngleX={20}
     tiltMaxAngleY={20}
     perspective={1000}
