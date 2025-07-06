@@ -79,7 +79,7 @@ boxShadow: '0 0 2px #ec489988, 0 0 4px #ef444466, 0 0 15px #ef444433',
     gyroscope={true}
   >
             <img
-              src="/public/profile.jpeg"
+              src="/public/profilee.jpeg"
               alt="Rashi Dwivedi"
                className="w-full h-full object-cover rounded-full"
             />
