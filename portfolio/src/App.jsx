@@ -1,13 +1,13 @@
 import React from 'react'
 import { Navbar } from './components/Navbar/Navbar';
 import { Skills } from './components/skills/Skills';
-import { Experience } from './components/experience/Experience';
+import { Experience } from './components/Experience/Experience';
 import { Work } from './components/work/Work';
-import { Education } from './components/education/Education';
-import { Contact } from './components/contact/Contact';
-import { Footer } from './components/footer/Footer';
+import { Education } from './components/Education/Education';
+import { Footer } from './components/Footer/Footer';
 import { About } from './components/About/About';
 import GalaxyBackground from './components/GalaxyBackground';
+import { Contact } from './components/Contact/Contact';
 
 const App = () => {
    return (
