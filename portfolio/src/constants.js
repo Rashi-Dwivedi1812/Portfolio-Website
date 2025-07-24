@@ -34,6 +34,7 @@ import dockerLogo from './assets/tech_logo/docker.png';
 // Experience Section Logo's
 import gdgLogo from './assets/company_logo/gdg.png';
 import aimlLogo from './assets/company_logo/aiml.png';
+import gssocLogo from './assets/company_logo/gssoc.png';
 
 // // Education Section Logo's
 import jiitLogo from './assets/education_logo/jiit.png';
@@ -47,6 +48,7 @@ import relaxerLogo from './assets/work_logo/relaxer.jpeg';
 import tetrisLogo from './assets/work_logo/tetris.jpeg';
 import cloudLogo from './assets/work_logo/cloud.jpeg';
 import cyberheist from './assets/work_logo/cyberheist.jpeg';
+import sentilogLogo from './assets/work_logo/sentilog.jpeg';
 
 export const SkillsInfo = [
   {
@@ -105,6 +107,23 @@ export const SkillsInfo = [
   export const experiences = [
     {
       id: 0,
+      img: gssocLogo,
+      role: "Tech Contributor",
+      company: "GirlScript Summer of Code 2025",
+      date: "July 2025 - Present",
+      desc: "Contributed to multiple open-source projects by fixing bugs, adding features, and improving documentation. Collaborated with project maintainers and fellow contributors while enhancing skills in Git, GitHub, and full-stack development.",
+      skills: [
+        "Git & GitHub",
+        "Bug Fixing",
+        "Feature Enhancement",
+        "Open Source Workflow",
+        "Problem Solving",
+        "Frontend & Backend Development",
+        "API Integration",
+      ],
+    },
+    {
+      id: 1,
       img: aimlLogo,
       role: "JIIT 128 Campus Lead",
       company: "AI/ML Hub of JIIT",
@@ -120,7 +139,7 @@ export const SkillsInfo = [
       ],
     },
     {
-      id: 1,
+      id: 2,
       img: gdgLogo,
       role: "Core Team Member",
       company: "Google Developer Groups (GDG JIIT 128)",
@@ -189,6 +208,16 @@ export const SkillsInfo = [
     },
     {
       id: 2,
+      title: "SentiLog-AI",
+      description:
+        "An open-source platform that combines news sentiment analysis and personal mood journaling. It features a modern React frontend, a robust Node.js/Express backend, and a Python/Flask microservice for ML-powered sentiment/emotion analysis.",
+      image: sentilogLogo,
+      tags: ["HTML", "CSS", "JavaScript","Swiper-js","locomotive-scroll"],
+      github: "https://github.com/Rashi-Dwivedi1812/SentiLog-AI",
+      webapp: "https://sentilog-ai.vercel.app",
+    },
+    {
+      id: 2,
       title: "Animatic",
       description:
         "Animatic is a modern, responsive website with smooth scroll animations and interactive sliders using Locomotive.js and Swiper.js. Perfect for portfolios, landing pages, and creative showcases.",
@@ -217,16 +246,16 @@ export const SkillsInfo = [
       github: "https://github.com/Rashi-Dwivedi1812/Relaxer",
       webapp: "https://rashi-dwivedi1812.github.io/Relaxer/",
     },
-    // {
-    //   id: 4,
-    //   title: "Tetris Game",
-    //   description:
-    //     "Tetris Game is a classic block-stacking game built with React and Vite. It features smooth gameplay, responsive controls, and a clean UI—all optimized for performance and modern browsers. 🎮",
-    //   image: tetrisLogo,
-    //   tags: ["React.js","Vite","JavaScript", "HTML", "CSS"],
-    //   github: "https://github.com/Rashi-Dwivedi1812/Tetris-Game",
-    //   webapp: "",
-    // },
+    {
+      id: 4,
+      title: "Tetris Game",
+      description:
+        "Tetris Game is a classic block-stacking game built with React and Vite. It features smooth gameplay, responsive controls, and a clean UI—all optimized for performance and modern browsers. 🎮",
+      image: tetrisLogo,
+      tags: ["React.js","Vite","JavaScript", "HTML", "CSS"],
+      github: "https://github.com/Rashi-Dwivedi1812/Tetris-Game",
+      webapp: "",
+    },
     {
       id: 5,
       title: "Cloud Cast",

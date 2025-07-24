@@ -52,7 +52,7 @@ export const About = () => {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1VBNTWH4XTlTTEVx1gRD7t_O6i2HZDBG9/view?usp=sharing"
+            href="https://drive.google.com/file/d/1kRkmDkz1NbG_S3w__BSRoiUpMTJcRdMF/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
