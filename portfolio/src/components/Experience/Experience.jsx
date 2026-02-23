@@ -5,7 +5,7 @@ export const Experience = () => {
   return (
      <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[15vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -41,7 +41,7 @@ export const Experience = () => {
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
                 {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                <div className="w-20 h-20 bg-white rounded-md overflow-hidden">
                   <img
                     src={experience.img}
                     alt={experience.company}

@@ -18,7 +18,7 @@ import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
 import typescriptLogo from './assets/tech_logo/typescript.png';
 import gitLogo from './assets/tech_logo/git.png';
-import githubLogo from './assets/tech_logo/github.png';
+import githubLogo from './assets/tech_logo/githubs.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import mcLogo from './assets/tech_logo/mc.png';
@@ -29,12 +29,18 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 import phpLogo from './assets/tech_logo/php.png';
 import golangLogo from './assets/tech_logo/golang.png';
 import dockerLogo from './assets/tech_logo/docker.png';
-
+import pythonLogo from './assets/tech_logo/python.png';
+import clerkLogo from './assets/tech_logo/clerk.png';
+import convexLogo from './assets/tech_logo/convex.png';
+import supabaseLogo from './assets/tech_logo/supabase.png';
+import socketioLogo from './assets/tech_logo/socket-io.svg';
+import restapiLogo from './assets/tech_logo/rest.png';
 
 // Experience Section Logo's
 import gdgLogo from './assets/company_logo/gdg.png';
 import aimlLogo from './assets/company_logo/aiml.png';
 import gssocLogo from './assets/company_logo/gssoc.png';
+import internLogo from './assets/company_logo/interns.jpeg';
 
 // // Education Section Logo's
 import jiitLogo from './assets/education_logo/jiit.png';
@@ -43,12 +49,10 @@ import vpsLogo from './assets/education_logo/vps.jpeg';
 // Project Section Logo's
 import ridebuddyLogo from './assets/work_logo/ridebuddy.jpeg';
 import animaticLogo from './assets/work_logo/animatic.jpeg';
-import urlLogo from './assets/work_logo/url.jpeg';
-import relaxerLogo from './assets/work_logo/relaxer.jpeg';
-import tetrisLogo from './assets/work_logo/tetris.jpeg';
-import cloudLogo from './assets/work_logo/cloud.jpeg';
 import cyberheist from './assets/work_logo/cyberheist.jpeg';
-import sentilogLogo from './assets/work_logo/sentilog.jpeg';
+import chatbotLogo from './assets/work_logo/chatbots.jpeg';
+import laraLegalLogo from './assets/work_logo/Lara.jpeg';
+import forgedSignatureLogo from './assets/work_logo/forged.jpeg';
 
 export const SkillsInfo = [
   {
@@ -75,6 +79,8 @@ export const SkillsInfo = [
       { name: 'MongoDB', logo: mongodbLogo },
       { name: 'Firebase', logo: firebaseLogo },
       { name: 'PostgreSQL', logo: postgreLogo },
+      { name: 'Socket.IO', logo: socketioLogo },
+      { name: 'REST API', logo: restapiLogo },
     ],
   },
   {
@@ -82,6 +88,7 @@ export const SkillsInfo = [
     skills: [
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
+      {name: 'Python', logo:  pythonLogo},
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'TypeScript', logo: typescriptLogo },
        { name: 'PHP', logo: phpLogo },
@@ -100,6 +107,9 @@ export const SkillsInfo = [
       { name: 'Netlify', logo: netlifyLogo },
       { name: 'Figma', logo: figmaLogo },
       { name: 'Docker', logo: dockerLogo },
+      { name: 'Clerk Auth', logo: clerkLogo },
+      { name: 'Convex', logo: convexLogo },
+      { name: 'Supabase', logo: supabaseLogo },
     ],
   },
 ];
@@ -107,6 +117,21 @@ export const SkillsInfo = [
   export const experiences = [
     {
       id: 0,
+      img: internLogo,
+      role: "Backend Developer Internship",
+      company: "Panel Voices Pvt. Ltd.",
+      date: "Oct 2025 - Nov 2025",
+      desc: "During my internship, I contributed to several core projects that involved backend architecture, API development, and OpenAI-powered AI functionalities.",
+      skills: [
+        "Backend architecture",
+        "API development",
+        "System optimization",
+        "Debugging & Testing",
+        "Problem Solving",
+      ],
+    },
+    {
+      id: 1,
       img: gssocLogo,
       role: "Tech Contributor",
       company: "GirlScript Summer of Code 2025",
@@ -123,7 +148,7 @@ export const SkillsInfo = [
       ],
     },
     {
-      id: 1,
+      id: 2,
       img: aimlLogo,
       role: "JIIT 128 Campus Lead",
       company: "AI/ML Hub of JIIT",
@@ -139,7 +164,7 @@ export const SkillsInfo = [
       ],
     },
     {
-      id: 2,
+      id: 3,
       img: gdgLogo,
       role: "Core Team Member",
       company: "Google Developer Groups (GDG JIIT 128)",
@@ -188,13 +213,13 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
-      title: "CyberHeist",
+      title: "Lara-Legal Analysis & Research Assistant",
       description:
-        "Nostalgic gaming platform that brings retro arcade games into the modern era.",
-      image: cyberheist,
-      tags: [ "React Js","Typescript","Vite","Tailwind","Node Js","Postgresql","Google Authentication"],
-      github: "https://github.com/Cyberheist1/cyberheist",
-      webapp: "https://cyber-heist.netlify.app/",
+        "L.A.R.A is a deployed, AI-powered legal research system for Indian law that automates issue identification, case retrieval, statutory analysis, and structured legal drafting using a multi-agent RAG architecture.",
+      image: laraLegalLogo,
+      tags: ["FastAPI", "Langraph","Groq","Sentence-Transformers","Tavily Search API","React.js","Clerk Auth"],
+      github: "https://github.com/Rashi-Dwivedi1812/Lara-Legal-Assistant",
+      webapp: "https://lara-legal-assistant.streamlit.app/",
     },
     {
       id: 1,
@@ -208,16 +233,36 @@ export const SkillsInfo = [
     },
     {
       id: 2,
-      title: "SentiLog-AI",
+      title: "Forged Signature Verification",
       description:
-        "An open-source platform that combines news sentiment analysis and personal mood journaling. It features a modern React frontend, a robust Node.js/Express backend, and a Python/Flask microservice for ML-powered sentiment/emotion analysis.",
-      image: sentilogLogo,
-      tags: ["HTML", "CSS", "JavaScript","Swiper-js","locomotive-scroll"],
-      github: "https://github.com/Rashi-Dwivedi1812/SentiLog-AI",
-      webapp: "https://sentilog-ai.vercel.app",
+        "A full-stack web application built with React and a TensorFlow/FastAPI backend to detect forged signatures and compare signature similarity.",
+       image: forgedSignatureLogo,
+      tags: ["FastAPI", "TensorFlow & Keras","Python3","Vite","Pillow","React.js","Vercel","Render"],
+      github: "https://github.com/Rashi-Dwivedi1812/Forged-Signature-Verification",
+      webapp: "https://forged-signature-verification.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
+      title: "CyberHeist",
+      description:
+        "Nostalgic gaming platform that brings retro arcade games into the modern era.",
+      image: cyberheist,
+      tags: [ "React Js","Typescript","Vite","Tailwind","Node Js","Postgresql","Google Authentication"],
+      github: "https://github.com/Cyberheist1/cyberheist",
+      webapp: "https://cyber-heist.netlify.app/",
+    },
+    {
+      id: 4,
+      title: "Chatbot",
+      description:
+        "A modern real-time chat application built using Next.js, Convex, Clerk, and Tailwind CSS. Supports one-to-one chat, group conversations, reactions, typing indicators, presence detection, and smart UX enhancements.",
+     image: chatbotLogo,
+      tags: ["Nextjs","Typescript","Convex","Clerk Auth","Tailwind CSS","Vercel"],
+      github: "https://github.com/Rashi-Dwivedi1812/Tars-Chatbot",
+      webapp: "https://tars-chat-bot.vercel.app/",
+    },
+    {
+      id: 5,
       title: "Animatic",
       description:
         "Animatic is a modern, responsive website with smooth scroll animations and interactive sliders using Locomotive.js and Swiper.js. Perfect for portfolios, landing pages, and creative showcases.",
@@ -225,45 +270,5 @@ export const SkillsInfo = [
       tags: ["HTML", "CSS", "JavaScript","Swiper-js","locomotive-scroll"],
       github: "https://github.com/Rashi-Dwivedi1812/Animatic",
       webapp: "https://rashi-dwivedi1812.github.io/Animatic/",
-    },
-    {
-      id: 3,
-      title: "LinkCut",
-      description:
-        "A fast and efficient URL shortening service built with Go, Redis, and Docker for the backend, and a modern React + TypeScript frontend for a smooth user experience.",
-      image: urlLogo,
-      tags: ["React JS","Vite","TypeScript","GoLang","Docker","Redis"],
-      github: "https://github.com/Rashi-Dwivedi1812/Url-Shortener",
-      webapp: "",
-    },
-    {
-      id: 4,
-      title: "Relaxer",
-      description:
-        "Relaxer, breathing Exercise Web App is a simple, responsive tool that guides users through mindful breathing with smooth animations. Ideal for reducing stress, improving focus, and promoting relaxation. 🌿",
-      image: relaxerLogo,
-      tags: ["HTML","CSS","JavaScript"],
-      github: "https://github.com/Rashi-Dwivedi1812/Relaxer",
-      webapp: "https://rashi-dwivedi1812.github.io/Relaxer/",
-    },
-    {
-      id: 4,
-      title: "Tetris Game",
-      description:
-        "Tetris Game is a classic block-stacking game built with React and Vite. It features smooth gameplay, responsive controls, and a clean UI—all optimized for performance and modern browsers. 🎮",
-      image: tetrisLogo,
-      tags: ["React.js","Vite","JavaScript", "HTML", "CSS"],
-      github: "https://github.com/Rashi-Dwivedi1812/Tetris-Game",
-      webapp: "",
-    },
-    {
-      id: 5,
-      title: "Cloud Cast",
-      description:
-        "A responsive weather app that fetches real-time weather data using the OpenWeatherMap API. Built with HTML and CSS, it features a clean UI, city-based search, and accurate weather details. ☁️🌍",
-      image: cloudLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/Rashi-Dwivedi1812/Cloud-Cast",
-      webapp: "https://rashi-dwivedi1812.github.io/Cloud-Cast/",
-    },
+    }
   ];  
